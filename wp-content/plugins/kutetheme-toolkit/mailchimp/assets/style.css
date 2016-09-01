@@ -1,0 +1,40 @@
+/*
+ * Mailchimp
+ */
+.mailchimp-wrapper{
+    margin-bottom: 15px;
+}
+.mailchimp-success,
+.mailchimp-error{
+    clear: both;
+    display: none;
+    text-align: left;
+}
+.mailchimp-success{
+    color: #3c763d;
+}
+.mailchimp-error{
+    color: #a94442;
+}
+.mailchimp-error a,
+.mailchimp-error a:hover,
+.mailchimp-error a:focus{
+    color: #843534!important;
+    font-weight: 700;
+}
+.mailchimp-error a:hover,
+.mailchimp-error a:focus{
+    text-decoration: underline;
+}
+.mailchimp-before,
+.mailchimp-after{
+    margin-bottom: 30px;
+}
+.mailchimp-layout-two{
+    text-align: right;
+}
+.mailchimp-form .input-group,
+.mailchimp-input-email,
+.mailchimp-input-button{
+    margin-bottom: 10px;
+}

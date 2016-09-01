@@ -1,0 +1,206 @@
+.container-option *:focus,
+.container-option .wrapper  a:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+    -webkit-box-shadow: 0 0 0 0 !important;
+}
+.container-option .wrapper{
+    overflow: hidden;
+}
+.container-option .kt_sidebar{
+    float: left;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: #007176;
+}
+.kt-box-menu{
+    border-top: 3px #007176 solid;
+}
+.kt_sidebar ul {
+    margin: 0;
+}
+.kt_sidebar ul.kt_group_menu{
+    padding-bottom: 10px;
+}
+.kt_sidebar  ul  li{
+    margin-bottom: 0;
+    overflow: hidden;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:rgba(255,255,255,0.1); 
+    position: relative; 
+}
+.kt_sidebar ul a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out;
+}
+.kt_sidebar ul ul{
+    margin-left: 10px;
+    -webkit-transition: height 0.5s ease-in;
+    -moz-transition: height 0.5s ease-in;
+    -o-transition: height 0.5s ease-in;
+    -ms-transition: height 0.5s ease-in;
+    transition: height 0.5s ease-in;
+}
+.content-page-option{
+    width: 75%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.content-page-option .content-tab{
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.bg-color-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #007176;
+    z-index: -1;
+}
+.content-page-option h2{
+    margin: 0;
+    padding-top: 10px;
+    background-color: #e4e4e4;
+}
+.content-page-option h2 .nav-tab{
+    margin-top: 0px;
+}
+.content-page-option form{
+    overflow: hidden;
+    padding-left: 10px;
+}
+.kt_group_menu .menu-item-active>a,
+.kt_group_menu .active>a{
+    font-weight: bold;
+}
+/*.kt_group_menu a:before{
+    content: "\f159";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 18px;
+    font-family: dashicons;
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: top;
+    text-align: center;
+    -webkit-transition: color .1s ease-in 0;
+    transition: color .1s ease-in 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.kt_group_menu li.has_child > a:before{
+    content: "\f139";
+    font-size: 20px;
+}*/
+/*.kt_group_menu li.has_child.menu-item-active > a:before,
+.rtl .kt_group_menu li.has_child.menu-item-active > a:before{
+    content: "\f140";
+    font-size: 20px;
+}
+.kt_group_menu li.has_child:hover > a:before{
+    content: "\f140" !important;
+}*/
+.kt_group_menu .arow{
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.kt_group_menu .arow:before{
+    content: "\f140";
+    font-family: 'dashicons';
+    display: inline-block;
+    color: #fff;
+}
+.kt_group_menu .has_child>.kt_menu{
+    display: none;
+}
+.kt_group_menu .menu-item-active>.kt_menu{
+    display: block;
+}
+.kt_group_menu .kt_menu>li{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color:rgba(255,255,255,0.1);  
+    border-bottom: none;
+}
+.kt_group_menu .show-submenu>.kt_menu{
+    display: block;
+}
+.kt_group_menu .kt_item_menu.menu-item-active>a,
+.kt_group_menu .kt_item_menu.show-submenu>a{
+    background-color: #10A0A6;
+}
+/**
+* TYPE radio_image
+*/
+.cmb2-list-image input[type="radio"]{
+    display: none;
+}
+.cmb-td ul.cmb2-list-image{
+    width: 100%;
+    float: left;
+}
+ul.cmb2-list-image li{
+    margin-bottom: 15px;
+    width: 45%;
+    float: left;
+    margin-right: 20px;
+}
+ul.cmb2-list-image li:nth-child(2n+1){
+    clear: left;
+}
+.cmb2-list-image input[type="radio"]:checked + label{
+    outline: 3px solid #007176;
+    display: block;
+}
+ul.cmb2-list-image li img{
+    max-width:100%;
+}
+.cmb2-list-image input[type="radio"] + label{
+    outline: 3px solid #ccc;
+    overflow: hidden;
+    display: inline-block;
+}
+/**
+*RTL
+*/
+.rtl .container-option .kt_sidebar{
+    float: right;
+}
+.rtl .content-page-option{
+    padding-right: 250px;
+    padding-left: 0;
+}
+.rtl .bg-color-menu{
+    right: 0;
+    left: auto;
+}
+.rtl .kt_sidebar ul ul{
+    margin-left: 0;
+    margin-right: 10px;
+}
+.rtl .kt_group_menu li.has_child > a:before{
+    content: "\f141";
+}
+.rtl .content-page-option form{
+    padding-left: 0;
+    padding-right: 10px;
+}
