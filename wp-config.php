@@ -26,7 +26,7 @@ define('DB_NAME', 'baongocshop');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '123456');
+define('DB_PASSWORD', 'admin123');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -87,3 +87,4 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+define('FS_METHOD','direct');
